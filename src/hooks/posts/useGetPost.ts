@@ -31,7 +31,7 @@ const useGetPost = ({ shouldPaginate = true }: Props = {}) => {
 
     return {
       image: media.urls.regular,
-      name: `${user.first_name} ${user.last_name}`,
+      name: `${user.first_name} ${user.last_name ?? ""}`,
       avatar: user.profile_images.medium,
       likes: media.statistics.likes,
       views: media.statistics.views,

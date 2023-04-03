@@ -17,7 +17,7 @@ const useInterval: Props = (callback, delay) => {
 
   useEffect(() => {
     callbackRef.current = callback;
-  });
+  }, [callback]);
 
   useEffect(() => {
     const cb = () => {
