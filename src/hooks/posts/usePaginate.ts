@@ -1,5 +1,6 @@
-import { INITIAL_OFFSET } from "config/posts";
 import { useState } from "react";
+
+import { INITIAL_OFFSET } from "config/posts";
 
 const usePaginate = () => {
   const [offset, setOffset] = useState(INITIAL_OFFSET);
