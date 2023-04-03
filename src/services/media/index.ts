@@ -4,11 +4,11 @@ type GetMediaRequest = RequestType<{
   media: Media;
 }>;
 
-type GetUserProps = {
+type GetMediaProps = {
   id: string;
 };
 
-export const getMedia = async ({ id }: GetUserProps) => {
+export const getMedia = async ({ id }: GetMediaProps) => {
   const posts = await request<GetMediaRequest>({
     url: `/medias/${id}`,
     append: "?",
