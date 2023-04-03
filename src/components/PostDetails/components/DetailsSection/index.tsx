@@ -4,6 +4,7 @@ import { Likes, Views, Wrapper } from "./styles";
 
 const DetailsSection = () => {
   const { likes, views } = usePostsContext();
+
   return (
     <Wrapper>
       <Likes>

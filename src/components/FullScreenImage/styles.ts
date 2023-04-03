@@ -22,6 +22,6 @@ export const PostImage = styled.img`
   width: 100%;
   height: 100%;
   box-shadow: ${({ theme }) => theme.spaces[1]}
-    ${({ theme }) => theme.spaces[1]} 30px black;
+    ${({ theme }) => theme.spaces[1]} ${({ theme }) => theme.spaces[6]} black;
   object-fit: contain;
 `;

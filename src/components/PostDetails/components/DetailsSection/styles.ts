@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -21,5 +21,3 @@ export const Likes = styled.div`
 export const Views = styled.div`
   color: ${({ theme }) => theme.colors.gray};
 `;
-
-export { Wrapper };

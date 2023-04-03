@@ -25,7 +25,7 @@ const useInterval: Props = (callback, delay) => {
     };
 
     if (isInitialRender) {
-      // Does not waits the delay
+      // Does not waits the delay time if it's the first render.
       cb();
       setIsInitialRender(false);
     }

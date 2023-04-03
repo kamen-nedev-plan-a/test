@@ -8,4 +8,4 @@ const Wrapper = styled.div`
     ${({ theme }) => theme.colors.blue};
 `;
 
-export { Wrapper };
+export default Wrapper;

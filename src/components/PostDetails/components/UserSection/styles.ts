@@ -7,4 +7,4 @@ const Wrapper = styled.div`
   padding: ${({ theme }) => theme.spaces[6]};
 `;
 
-export { Wrapper };
+export default Wrapper;

@@ -18,7 +18,6 @@ export const PostsProvider = ({ children }: Props) => {
 
   useInterval(async () => {
     try {
-      // const postData = undefined;
       const postData = await getCurrentPost();
       setState(postData);
 

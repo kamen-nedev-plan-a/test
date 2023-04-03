@@ -1,6 +1,7 @@
 import { usePostsContext } from "context/PostsContext";
-import UserAvatar from "../../../UserAvatar";
-import { Wrapper } from "./styles";
+
+import UserAvatar from "components/UserAvatar";
+import Wrapper from "./styles";
 
 const UserSection = () => {
   const { avatar, name } = usePostsContext();
