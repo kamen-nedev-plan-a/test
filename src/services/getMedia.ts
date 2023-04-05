@@ -1,4 +1,4 @@
-import request from "../request";
+import request from "./request";
 
 type GetMediaRequest = RequestType<{
   media: Media;
@@ -8,7 +8,7 @@ type GetMediaProps = {
   id: string;
 };
 
-export const getMedia = async ({ id }: GetMediaProps) => {
+const getMedia = async ({ id }: GetMediaProps) => {
   const posts = await request<GetMediaRequest>({
     url: `/medias/${id}`,
     append: "?",
@@ -16,3 +16,5 @@ export const getMedia = async ({ id }: GetMediaProps) => {
 
   return posts.response.media;
 };
+
+export default getMedia;

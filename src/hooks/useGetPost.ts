@@ -1,8 +1,6 @@
 import { INITIAL_LIMIT } from "config/posts";
-import usePaginate from "hooks/posts/usePaginate";
-import { getMedia } from "services/media";
-import { getPosts } from "services/posts";
-import { getUser } from "services/user";
+import { usePaginate } from "hooks";
+import { getPosts, getUser, getMedia } from "services";
 
 type Props = {
   shouldPaginate?: boolean;
@@ -25,7 +23,7 @@ const useGetPost = ({ shouldPaginate = true }: Props = {}) => {
 
     const canLoadMore = count > 1;
 
-    if (shouldPaginate) {
+    if (shouldPaginate && canLoadMore) {
       paginate();
     }
 

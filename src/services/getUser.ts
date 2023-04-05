@@ -1,4 +1,4 @@
-import request from "../request";
+import request from "./request";
 
 type GetUserRequest = RequestType<{
   count: number;
@@ -9,7 +9,7 @@ type GetUserProps = {
   username: string;
 };
 
-export const getUser = async ({ username }: GetUserProps) => {
+const getUser = async ({ username }: GetUserProps) => {
   const posts = await request<GetUserRequest>({
     url: `/users/${username}`,
     append: "?",
@@ -17,3 +17,5 @@ export const getUser = async ({ username }: GetUserProps) => {
 
   return posts.response.user;
 };
+
+export default getUser;

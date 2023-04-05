@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, MutableRefObject } from "react";
 
 export type IntervalDelay = number | null;
 
@@ -13,7 +13,7 @@ type Props = (callback: () => void, delay: IntervalDelay) => void;
 const useInterval: Props = (callback, delay) => {
   const [isInitialRender, setIsInitialRender] = useState(true);
 
-  const callbackRef: React.MutableRefObject<() => void> = useRef(() => null);
+  const callbackRef: MutableRefObject<() => void> = useRef(() => null);
 
   useEffect(() => {
     callbackRef.current = callback;

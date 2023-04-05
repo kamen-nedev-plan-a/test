@@ -1,4 +1,4 @@
-import request from "../request";
+import request from "./request";
 
 type GetPostsRequest = RequestType<{
   count: number;
@@ -10,10 +10,12 @@ type GetPostsProps = {
   limit: number;
 };
 
-export const getPosts = async ({ offset, limit }: GetPostsProps) => {
+const getPosts = async ({ offset, limit }: GetPostsProps) => {
   const posts = await request<GetPostsRequest>({
     url: `/posts?offset=${offset}&limit=${limit}`,
   });
 
   return posts.response;
 };
+
+export default getPosts;

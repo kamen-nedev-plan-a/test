@@ -1,5 +1,5 @@
-import PostDetails from "components/PostDetails";
-import FullScreenImage from "components/FullScreenImage";
+import { PostDetails, FullScreenImage } from "components";
+
 import Wrapper from "./styles";
 
 const Posts = () => {

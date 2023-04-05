@@ -1,6 +1,6 @@
 import { usePostsContext } from "context/PostsContext";
 
-import UserAvatar from "components/UserAvatar";
+import { UserAvatar } from "components/design-system";
 import Wrapper from "./styles";
 
 const UserSection = () => {

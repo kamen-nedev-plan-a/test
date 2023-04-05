@@ -1,7 +1,4 @@
-import DescriptionSection from "./components/DescriptionSection";
-import DetailsSection from "./components/DetailsSection";
-import UserSection from "./components/UserSection";
-
+import { UserSection, DescriptionSection, DetailsSection } from "./components";
 import Wrapper from "./styles";
 
 const PostDetails = () => {

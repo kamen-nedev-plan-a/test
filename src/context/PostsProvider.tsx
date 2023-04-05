@@ -1,6 +1,6 @@
-import useGetPost from "hooks/posts/useGetPost";
-import useInterval, { IntervalDelay } from "hooks/useInterval";
 import { createContext, useState, ReactNode } from "react";
+
+import { useGetPost, useInterval, IntervalDelay } from "hooks";
 
 type Props = {
   children: ReactNode;

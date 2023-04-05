@@ -1,5 +1,6 @@
 import { usePostsContext } from "context/PostsContext";
-import { Icon } from "design-system";
+
+import { Icon } from "components/design-system";
 import { Likes, Views, Wrapper } from "./styles";
 
 const DetailsSection = () => {

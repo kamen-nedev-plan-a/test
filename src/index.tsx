@@ -1,11 +1,10 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 
 import { theme } from "./config/theme";
 import { PostsProvider } from "context/PostsProvider";
 
-import Posts from "./pages/Posts";
+import { Posts } from "./pages";
 
 import "./global.css";
 
